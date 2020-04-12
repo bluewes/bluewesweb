@@ -3,14 +3,37 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FooterComponent } from './common/components/footer/footer.component';
+import { MenuComponent } from './common/components/menu/menu.component';
+import { StoreLocatorComponent } from './common/components/store-locator/store-locator.component';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { HomeComponent } from './common/components/home/home.component';
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
+import { ProfileComponent } from './common/components/profile/profile.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FooterComponent,
+    MenuComponent,
+    StoreLocatorComponent,
+    HomeComponent,
+    ProfileComponent
   ],
   imports: [
+    CarouselModule.forRoot(),
+    BsDropdownModule.forRoot(),
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
+    CommonModule,
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,88 @@
+<div class="bw-mainSection" *ngIf="retailerInfo">
+    <carousel [interval]="100">
+        <slide *ngFor='let img of retailerInfo.carouselImages1'>
+            <a href='{{img.redirectUrl}}' target="_blank" style='width:100%'>
+                <img src="{{img.uploadedURL}}" style='width:100%'>
+            </a>
+        </slide>
+    </carousel>
+    <div class="container">
+        <div class="bw-categoryType">
+            <ul class="list-inline">
+                <li>
+                    <div class="bw-catType">
+                        <a href="javascript:void(0)" title="Grocery">
+                            <b>Grocery</b>
+                            <img src="assets/img/catType_groceries@3x.png" alt="Category Type Img">
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="bw-catType">
+                        <a href="javascript:void(0)" title="Electronics">
+                            <b>Electronics</b>
+                            <img src="assets/img/catType_electronics@3x.png" alt="Category Type Img">
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="bw-catType">
+                        <a href="javascript:void(0)" title="Services">
+                            <b>Services</b>
+                            <img src="assets/img/catType_services@3x.png" alt="Category Type Img">
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="bw-catType">
+                        <a href="javascript:void(0)" title="Fashion">
+                            <b>Fashion</b>
+                            <img src="assets/img/catType_fashion@3x.png" alt="Category Type Img">
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="bw-categoryCarousel">
+            <carousel [interval]="100">
+                <slide *ngFor='let img of retailerInfo.carouselImages2'>
+                    <a href='{{img.redirectUrl}}' target="_blank" style='width:100%'>
+                        <img src="{{img.uploadedURL}}" style='width:100%'>
+                    </a>
+                </slide>
+            </carousel>
+        </div>
+        <div class="bw-catsection">
+            <h1 class="bw-sectionTitle">{{retailerInfo.categoryWidgetTitle}}</h1>
+            <div class="bw-catList">
+                <ul class="list-inline">
+                    <li *ngFor='let cat of retailerInfo.selectedCategoreis'>{{cat.name}}</li> 
+                 </ul>
+            </div>
+        </div>
+        <div class="bw-catsection">
+            <h2 class="bw-sectionTitle">Brand Store</h2>
+            <div class="bw-catList">
+                <ul class="list-inline">
+                   <li *ngFor='let brand of retailerInfo.selectedBrands'>{{brand.name}}</li> 
+                </ul>
+            </div>
+        </div>
+        <div class="bw-catsection">
+            <h2 class="bw-sectionTitle">Snack Time Favourites</h2>
+            <div class="bw-snackSection">
+                <a *ngFor='let img of retailerInfo.favouriteWidget' href='{{img.redirectUrl}}' target="_blank">
+                    <img src="{{img.uploadedURL}}" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="bw-catsection">
+            <h3 class="bw-sectionTitle">Featured</h3>
+            <div class="bw-featuredImg">
+                <a *ngFor='let img of retailerInfo.featureWidget' href='{{img.redirectUrl}}' target="_blank">
+                    <img src="{{img.uploadedURL}}" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

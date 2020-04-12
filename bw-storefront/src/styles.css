@@ -1,1 +1,197 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+*, :after, :before {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box; }
+  
+  *, :after, :before, input[type=checkbox], input[type=radio] {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box; }
+  
+  input[type=search] {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box; }
+  
+  input[type=checkbox], input[type=radio] {
+    padding: 0px;
+    box-sizing: border-box; }
+  
+  ::placeholder {
+    color: #b5b5b5;
+    letter-spacing: -0.36px; }
+  
+  select {
+    -webkit-appearance: none; }
+  
+  input[disabled], select[disabled] {
+    cursor: not-allowed;
+    background-color: #f2f3f6; }
+  
+  *, *:focus {
+    outline: none; }
+  
+  img {
+    max-width: 100%;
+    vertical-align: bottom; }
+  
+  a {
+    color: #000;
+    text-decoration: none;
+    display: inline-block; }
+  
+  a:focus, a:hover {
+    text-decoration: none; }
+  
+  p {
+    margin: 0 auto; }
+  
+  .text-center {
+    text-align: center !important; }
+  
+  .text-right {
+    text-align: right !important; }
+  
+  .text-left {
+    text-align: left !important; }
+  
+  .container {
+    position: relative;
+    margin: 0 auto; }
+  
+  .container-fluid {
+    position: relative;
+    padding: 0px 48px; }
+  
+  @media only screen and (max-width: 992px) {
+    .container {
+      padding: 0 12px; }
+    .bw-categoryNav {
+      max-width: none; } }
+  
+  @media (min-width: 992px) {
+    .container {
+      width: 970px; }
+    .bw-categoryNav {
+      max-width: 970px; } }
+  
+  @media only screen and (min-width: 1200px) {
+    .container {
+      width: 1110px; }
+    .bw-categoryNav {
+      max-width: 1110px; } }
+  
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    border-radius: 20px; }
+  
+  ::-webkit-scrollbar-button {
+    display: none; }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #e2e2e2; }
+  
+  ::-webkit-scrollbar-track-piece {
+    background-color: #e2e2e2; }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #eee; }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #050066; }
+  
+  ::-webkit-scrollbar-corner {
+    display: none; }
+  
+  ::-webkit-resizer {
+    display: none; }
+    .list-inline {
+        padding: 0;
+        font-size: 0;
+        margin: 0 -6px;
+        list-style-type: none; }
+      
+      .list-inline > li {
+        padding: 0 6px;
+        font-size: 14px;
+        display: inline-block;
+        vertical-align: middle; }
+      
+      .list-unstyled {
+        padding: 0;
+        margin: 0 auto;
+        list-style-type: none; }
+
+        .form-control, .bw-formControl {
+            position: relative;
+            width: 100%;
+            height: 44px;
+            display: block;
+            color: #212b36;
+            font-size: 14px;
+            box-shadow: none;
+            line-height: 18px;
+            padding: 6px 12px;
+            transition: 0.5s;
+            -moz-transition: 0.5s;
+            background-color: #fff;
+            -webkit-transition: 0.5s;
+            border: 1px solid #8693a1;
+            font-family: 'Roboto', sans-serif; }
+          
+          .form-control:focus, .bw-formControl:focus {
+            border: 1px solid #93A2AB; }
+          
+          .form-control[disabled], .bw-formControl[disabled] {
+            opacity: 1;
+            cursor: not-allowed;
+            background-color: #eee !important; }
+          
+          .form-control::-webkit-inner-spin-button, .form-control::-webkit-outer-spin-button, .bw-formControl::-webkit-inner-spin-button, .bw-formControl::-webkit-outer-spin-button {
+            appearance: none;
+            -moz-appearance: none;
+            -webkit-appearance: none; }
+          
+          textarea.bw-formControl {
+            height: auto;
+            resize: vertical; }
+          
+          .hasErr > label {
+            color: #fb6340; }
+          
+          .hasErr > .bw-formControl {
+            border: 1px solid #fb6340; }
+          
+          .hasErr > .bw-formControl::placeholder {
+            color: #fb6340; }
+          
+          .hide {
+            display: none !important; }
+          
+          .text-link {
+            position: relative;
+            cursor: pointer;
+            text-decoration: underline; }
+          
+          .hasBlueColor {
+            color: #3399fe; }
+          
+          .bw-lgVisible {
+            display: block; }
+          
+          .bw-xsVisible {
+            display: none; }
+          
+          body {
+            margin: 0px;
+            padding: 0px;
+            color: #212b36;
+            font-size: 14px;
+            background-color: #f7f8fc;
+            font-family: 'Roboto', sans-serif; }
+            
