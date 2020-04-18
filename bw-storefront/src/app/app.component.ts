@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { CommonService } from './services/common/common.service';
 
 @Component({
   selector: 'app-root',
@@ -8,11 +9,13 @@ import { Router } from '@angular/router';
 })
 export class AppComponent implements OnInit {
 
-  constructor(private router : Router){}
+  constructor(private router : Router, private commonService : CommonService){}
   
-  ngOnInit(){
-    let location = localStorage.getItem('location');
-    if (location == null)
-      this.router.navigateByUrl('/store-Locator')
+  ngOnInit() {
+    this.commonService.getRetailers().subscribe(res => {
+      let location = localStorage.getItem('location');
+      if (location == null)
+        this.router.navigateByUrl('/store-Locator')  
+    });
   }
 }

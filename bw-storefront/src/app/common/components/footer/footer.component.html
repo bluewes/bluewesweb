@@ -1,31 +1,31 @@
-<footer class="bw-footer">
+<footer class="bw-footer" *ngIf="retailerInfo">
     <div class="container">
         <div class="bw-footerLinks">
             <ul class="list-inline">
                 <li>
                     <div class="bw-footLinks">
-                        <b>BLUEWES</b>
+                        <b>{{retailerInfo.name}}</b>
                         <ul class="list-unstyled">
                             <li>
-                                <a href="javascript:void(0)" title="About Us">About Us</a>
+                                <a href="/footer/faq" title="About Us">About Us</a>
                             </li>
                             <li>
-                                <a href="javascript:void(0)" title="In News">In News</a>
+                                <a href="/footer/news" title="In News">In News</a>
                             </li>
                             <li>
-                                <a href="javascript:void(0)" title="Bigbasket">Bigbasket</a>
+                                <a href="/footer/bigbasket" title="Bigbasket">Bigbasket</a>
                             </li>
                             <li>
-                                <a href="javascript:void(0)" title="Privacy Policy">Privacy Policy</a>
+                                <a href="/footer/privacy-policy" title="Privacy Policy">Privacy Policy</a>
                             </li>
                             <li>
-                                <a href="javascript:void(0)" title="Affiliate">Affiliate</a>
+                                <a href="/footer/affiliate" title="Affiliate">Affiliate</a>
                             </li>
                             <li>
-                                <a href="javascript:void(0)" title="Terms & Conditions">Terms & Conditions</a>
+                                <a href="/footer/terms-conditions" title="Terms & Conditions">Terms & Conditions</a>
                             </li>
                             <li>
-                                <a href="javascript:void(0)" title="Careers At BLUEWES">Careers At BLUEWES</a>
+                                <a href="/footer/careers" title="Careers At {{retailerInfo.name}}">Careers At {{retailerInfo.name}}</a>
                             </li>
                         </ul>
                     </div>
@@ -35,16 +35,13 @@
                         <b>Our Services</b>
                         <ul class="list-unstyled">
                             <li>
-                                <a href="javascript:void(0)" title="Groceries">Groceries</a>
+                                <a href="/footer/groceries" title="Groceries">Groceries</a>
                             </li>
                             <li>
-                                <a href="javascript:void(0)" title="Fashion">Fashion</a>
+                                <a href="/footer/fashion" title="Fashion">Fashion</a>
                             </li>
                             <li>
-                                <a href="javascript:void(0)" title="Services">Services</a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)" title="Electronics">Electronics</a>
+                                <a href="/footer/electronics" title="Electronics">Electronics</a>
                             </li> 
                         </ul>
                     </div>
@@ -54,19 +51,19 @@
                         <b>HELP</b>
                         <ul class="list-unstyled">
                             <li>
-                                <a href="javascript:void(0)" title="FAQs">FAQs</a>
+                                <a href="/footer/faq" title="FAQs">FAQs</a>
                             </li>
                             <li>
-                                <a href="javascript:void(0)" title="Contact Us">Contact Us</a>
+                                <a href="/footer/contact-us" title="Contact Us">Contact Us</a>
                             </li>
                             <li>
-                                <a href="javascript:void(0)" title="bb Wallet FAQs">bb Wallet FAQs</a>
+                                <a href="/footer/wallet-tc" title="bb Wallet FAQs">bb Wallet FAQs</a>
                             </li>
                             <li>
-                                <a href="javascript:void(0)" title="bb Wallet T&Cs">bb Wallet T&Cs</a>
+                                <a href="/footer/wallet-faq" title="bb Wallet T&Cs">bb Wallet T&Cs</a>
                             </li>
                             <li>
-                                <a href="javascript:void(0)" title="Vendor Connect">Vendor Connect</a>
+                                <a href="/footer/vendor" title="Vendor Connect">Vendor Connect</a>
                             </li>
                         </ul>
                     </div>
@@ -76,17 +73,17 @@
                         <b>FOLLOW US</b>
                         <ul class="list-inline socialLinks">
                             <li>
-                                <a href="javascript:void(0)" title="BlueWes Facebook">
+                                <a href="javascript:void(0)" title="{{retailerInfo.name}} Facebook">
                                     <span><i class="bw-ico-facebook"></i></span>
                                 </a>
                             </li>
                             <li>
-                                <a href="javascript:void(0)" title="BlueWes Twitter">
+                                <a href="javascript:void(0)" title="{{retailerInfo.name}} Twitter">
                                     <span><i class="bw-ico-twitter"></i></span>
                                 </a>
                             </li>
                             <li>
-                                <a href="javascript:void(0)" title="BlueWes Instagram">
+                                <a href="javascript:void(0)" title="{{retailerInfo.name}} Instagram">
                                     <span><i class="bw-ico-instagram"></i></span>
                                 </a>
                             </li>
@@ -96,19 +93,19 @@
             </ul>
         </div>
         <div class="bw-copyRight text-center">
-            <p>&copy; Bluewes </p>
+            <p>&copy; {{retailerInfo.name}} </p>
             <ul class="list-inline">
                 <li>
-                    <a href="javascript:void(0)" title="Privacy Policy">Privacy policy</a>
+                    <a href="/footer/privacy-policy" title="Privacy Policy">Privacy policy</a>
                 </li>
                 <li>
-                    <a href="javascript:void(0)" title="Cookie Policy">Cookie policy</a>
+                    <a href="/footer/cookie-policy" title="Cookie Policy">Cookie policy</a>
                 </li>
                 <li>
-                    <a href="javascript:void(0)" title="Find my MRP">Find my MRP</a>
+                    <a href="/footer/mrp" title="Find my MRP">Find my MRP</a>
                 </li>
                 <li>
-                    <a href="javascript:void(0)" title="Terms & Conditions">Terms & Conditions</a>
+                    <a href="/footer/terms-conditions" title="Terms & Conditions">Terms & Conditions</a>
                 </li>
             </ul>
         </div>

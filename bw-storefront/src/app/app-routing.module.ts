@@ -4,10 +4,10 @@ import { StoreLocatorComponent } from './common/components/store-locator/store-l
 import { HomeComponent } from './common/components/home/home.component';
 import { ProfileComponent } from './common/components/profile/profile.component';
 
-
 const routes: Routes = [
   { path: 'store-Locator', component: StoreLocatorComponent },
   { path: 'profile', component: ProfileComponent },
+  { path: 'footer', loadChildren: () => import('./footer/footer.module').then(m => m.FooterModule) },
   { path: '', component: HomeComponent },
 ];
 

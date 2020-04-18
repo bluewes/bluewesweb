@@ -9,7 +9,7 @@
             <h1>Search For Fashion?</h1>
             <h2>Everything and anything</h2>
             <div class="bw-locateStore">
-                <input type="text" id="location" placeholder="Enter your location" autocomplete="off">
+                <GooglePlacesComponent (setAddress)="getAddress($event)" adressType="geocode"></GooglePlacesComponent> 
                 <span class="locateMe" (click)="locateMe()">
                     <i class="bw-ico-gps_fixed"></i>
                     <small>Locate me</small>

@@ -14,6 +14,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { ProfileComponent } from './common/components/profile/profile.component';
 import { HttpClientModule } from '@angular/common/http';
+import { GooglePlacesComponent } from './common/components/google-places/google-places.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { HttpClientModule } from '@angular/common/http';
     MenuComponent,
     StoreLocatorComponent,
     HomeComponent,
-    ProfileComponent
+    ProfileComponent,
+    GooglePlacesComponent,
   ],
   imports: [
     CarouselModule.forRoot(),

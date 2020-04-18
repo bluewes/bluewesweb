@@ -1,4 +1,4 @@
-<header class="bw-header bw-smooth bw-lgVisible">
+<header class="bw-header bw-smooth bw-lgVisible" *ngIf="retailerInfo">
     <div class="container">
         <div class="bw-headCont">
             <div class="bw-headTop">
@@ -6,7 +6,7 @@
                     <li>
                         <div class="bw-logo">
                             <a href="javascript:void(0)" title="BlueWes">
-                                <img src="/assets/img/logo.png" alt="Bluewes Logo">
+                                <img src="{{retailerInfo.logo[0].uploadedURL}}" alt="Bluewes Logo" style="height: 50px;">
                             </a>
                         </div>
                         <div class="bw-userLocation">
